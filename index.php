@@ -9,25 +9,23 @@
 </head>
 
 <body>
-  <?php
-  //$+name of variable = declare variable
-  $title = "Palm's Site";
-  // $numberList = array(); // old way
-  $numberList = [1, 2, 3, 4, '<h1>Hello World</h1>'];
-  //numberList use index number as key
-  $name = ["first_name" => 'Wasin', "last_name" => 'Hongnak'];
-  //name use first_name and last_name as key and Wasin is value
-  print_r($numberList)
-  ?>
-  <h1>'s Site</h1>
-  <h1><?php
-      echo $title;
-      echo "<br>";
-      // this function show some text
-      print_r($name);
-      echo "<br>";
-      echo $name['first_name'] . "&nbsp;&nbsp;&nbsp;" . $name['last_name']
-      ?></h1>
+  <div>
+    <?php
+    //$+name of variable = declare variable
+    $title = "Palm's Site";
+    // $numberList = array(); // old way
+    $numberList = [1, 2, 3, 4, '<h1>Hello World</h1>'];
+    //numberList use index number as key
+    $name = ["first_name" => 'Wasin', "last_name" => 'Hongnak'];
+    $test = [["test" => 'test', "bla" => 'test3'], ["bla" => 'test2']];
+    //name use first_name and last_name as key and Wasin is value
+    print_r($numberList);
+    print_r($test[0]["bla"]);
+    echo $name['first_name'] . "&nbsp;&nbsp;&nbsp;" . $name['last_name']
+    ?>
+    <h1>'s Site</h1>
+  </div>
+
 </body>
 
 </html>
