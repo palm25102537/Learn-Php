@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+"<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -22,8 +22,36 @@
     print_r($numberList);
     print_r($test[0]["bla"]);
     echo $name['first_name'] . "&nbsp;&nbsp;&nbsp;" . $name['last_name']
+ 
     ?>
     <h1>'s Site</h1>
+    <?php
+    if(!false){
+      echo "hello";
+    }elseif(true){
+      echo "bravo";
+    };
+
+    $numbers = [["id"=>1,"name"=>"palm"],["id"=>2,"name"=>"wasin"],["id"=>3,"name"=>"opal"]];
+
+    // $numbers = [1,2,3,4]
+
+    echo "<br>";
+
+    // $numbers = array(1,2,3,4);
+
+    foreach($numbers as $number){
+      echo $number["name"]."&nbsp;";
+    };
+     
+    function sayHello(){
+      echo "hello";
+    }
+
+ 
+
+    sayHello()
+    ?>
   </div>
 
 </body>
